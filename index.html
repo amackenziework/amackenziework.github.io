@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Joint-Use Checklist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png?">
+  <link rel="apple-touch-icon-precomposed" href="img/favicon.png">
+  <link rel="mask-icon" href="img/favicon.png" color="#000000">
+  <meta name="description" content="A checklist for Joint-Use projects.">
+  <meta name="author" content="Alexander Mackenzie">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link id="bootstrap" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="nav-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#tabCL" data-toggle="tab" data-target="#tabCL,#btnHideCompleted">Checklist</a></li>>
+          <li><a href="#tabFAQ" data-toggle="tab"><span class="glyphicon glyphicon-cog"></span> Options</a></li>
+        </ul>
+        <!-- /.nav.navbar-nav -->
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+	  <img src="img/hs-emp-branding-image-data_.png"> <br>
+        <h1><b>Joint-Use&nbsp;Checklist</b></h1>
+      </div>
+    </div>
+
+    <div class="tab-content">
+      <!-- Hide Completed Toggle -->
+      <div class="tab-pane active in" id="btnHideCompleted">
+        <div class="btn-group" role="group" data-toggle="buttons">
+          <label class="btn btn-default">
+            <input type="checkbox" id="toggleHideCompleted">
+            <span class="glyphicon glyphicon-eye-close"></span>
+            <span class="glyphicon glyphicon-eye-open"></span>
+            Hide Completed
+            <a class="btn btn-default btn-sm fadingbutton togglehide" onclick="$('#toggleHideCompleted').click();">
+              <span class="glyphicon glyphicon-eye-close"></span>
+              <span class="glyphicon glyphicon-eye-open"></span>
+              Hide Completed
+            </a>
+          </label>
+        </div>
+      </div>
+      <!-- CL START -->
+      <div class="tab-pane active" id="tabCL">
+        <!-- Toolbar -->
+        <h2>  
+        </h2>
+        
+
+        <h2><b>Project Completion:</b> <span id="CL_overall_total"></span></h2>
+        <ul class="table_of_contents">
+          <li><a href="#sub_appr"><b>Submitting to Approvals</b></a> <span id="CL_nav_totals_3"></span></li>
+        </ul>
+
+        <div class="form-group">
+          <input type="search" id="CL_search" class="form-control" placeholder="Start typing to filter results..." />
+        </div>
+
+        <div id="CL_list">
+
+           <h3 id="sub_appr" style="color:#AB2609;"><a href="#sub_appr_col" data-toggle="collapse" class="btn btn-primary btn-collapse btn-sm" ></a>Submitting to Approvals<span id="CL_totals_3"></span></h3>
+          <ul id="sub_appr_col" class="collapse in">
+			
+			<h4><u>Sending GDT Design to Maximo</u></h4>
+            <li data-id="CL_3_1" class="f_misc">Once your design is complete within GDT, head to the 'Object Editor' tab and click the 'Specials' &rarr; 'Set Crew Workgroup.' <br>A new window should appear. Select the appropriate workgroup for your specific project.</li>
+            <li data-id="CL_3_2" class="f_misc">Click the 'Navigator' tab and select your WO. Press 'Send Design' to send your design to Maximo. <i>(Note: Changes made within Maximo will not affect your project inside GDT.)</i></li>
+            <li data-id="CL_3_3" class="f_misc">In the Corporate Desktop, open the <a href="google.com"> Maximo homepage</a> and navigate to your WO.</li>
+            <li data-id="CL_3_4" class="f_misc">Confirm that the GDT design was successfully transferred to Maximo by checking the Stations within the 'Plans' tab.</li>
+			
+			<h4><u><br>Generating Tailboard and Traffic Control Units</u></h4>
+      <li data-id="CL_3_5" class="f_misc">In the 'Plans' tab, select 'CU Estimate Request', and then select 'Run Estimations' from the left-side ribbon. Enter your WO and Revision number.</li>
+			<li data-id="CL_3_6" class="f_misc"> After Estimations are complete, select 'Run Reports' &rarr; 'Job Cost Summary'.</li>
+			<!--<details>
+				 <summary><i>&emsp;&emsp;[Click to Display Image <span class="icon">👇</span>]</i></summary>
+				<p>&emsp;&emsp;[add image]</p>
+			</details> -->
+            <li data-id="CL_3_7" class="f_misc">Save a copy of the <a href="file:///W:\houston\_TX WEST\Design Reference Documents\TRAFFIC TAILBOARD and CABLE LUBE CALCULATOR.xlsx">Traffic Tailboard and Lube Calculator</a> to a new folder labled "Originals" within your project's folder.</li>
+            <li data-id="CL_3_8" class="f_misc">Open the calculator and navigate to the 'Tailboard' tab. Round up the <b>total man-hours</b> value from the Job Cost Summary and copy it into the calculator's field.</li>
+            <li data-id="CL_3_9" class="f_misc">Navigate to the 'Traffic Control' tab. Copy the same value used for the Tailboard into the calculator's field. Set the traffic percentage to the appropriate level using an educated guess based on where the pole is located. <i>(Note: For most cases, all man-hours can simply be placed into 'Point 1.'')</i></li>
+            <details>
+              <summary><i>&emsp;&emsp;[Click to Display Example <span class="icon">👇</span>]</i></summary>
+              <p>&emsp;&emsp;<img src="img/ManHours.png"></p>
+            </details>
+            <li data-id="CL_3_10" class="f_mic">Navigate back to Maximo within the Corporate Desktop. And update the Tailboard and Traffic Control quantities for your project. Be sure to press save and check all Tailboard/Traffic quantities are accurate.<br><i>(Note: Values can be updated within the GDT design, but design must be sent once again in order for the changes to populate within Maximo.</i></li>
+            <li data-id="CL_3_11" class="f_misc">Re-run your estimations and re-run your 'Job Cost Summary' report. Use this updated version of the report moving forward.</li>
+
+			<h4><u><br>Diversity Calculator and New Eng & Supr Cost Sheet</u></h4>
+			      <li data-id="CL_3_12" class="f_mic">Navigate to the 'New Eng & Supr Cost' Excel sheet. </li>
+            <details>
+              <summary><i>&emsp;&emsp;[Click to view File Path <span class="icon">👇</span>]</i></summary>
+              <p>&emsp;&emsp;[add file path]</p>
+            </details>
+            <li data-id="CL_3_13" class="f_mic">Paste the 'Project Name', 'WO#', 'Line Voltage', and '# Of Poles' into Columns A-D.</li>
+            <li data-id="CL_3_14" class="f_mic">Paste the 'Total Estimate Cost', 'Total Labor Cost', and 'Total Material Cost' from your 'Job Cost Summary' into Columns E-G.</li>
+            <li data-id="CL_3_15" class="f_misc">Columns H & I should then auto populate. Open your Diversity Calculator sheet.</li>
+            <li data-id="CL_3_16" class="f_misc">Copy and paste Column I of the 'New Eng & Supr Cost' sheet into the 'Overhead or Streetlight Estimate' field of the Diversity Calculator.</li>
+            <li data-id="CL_3_17" class="f_misc">Use <a href="https://mycpa.cpa.state.tx.us/atj/search">Sales Tax Rate Locator</a> webpage to generate an accurate sales tax for the project's location.</li>
+            <li data-id="CL_3_18" class="f_misc">Copy and paste the given 'Total Tax Rate' as a percentage into the 'Sales Tax Rate %' field of the Calculator.</li>
+            <li data-id="CL_3_19" class="f_misc">Export a PDF copy of the Sales Tax webpage into your project's folder. You may now close the Sales Tax webpage.</li>
+            <li data-id="CL_3_20" class="f_misc">Paste the 'Client Name', 'Project Address', and 'WO#' into the 'Name', 'Address', and 'WR#' fields of the Calculator respectively.</li>
+            <li data-id="CL_3_21" class="f_misc">The 'CIAC Output' section should auto-populate with the required values. Copy and paste the 'Total Owed' from the Diversity Calculator into Column J of the 'New Eng & Supr Cost' sheet.</li>
+            <li data-id="CL_3_22" class="f_misc">Save your Diversity Calculator excel sheet to your Originals Folder <b>and</b> export a PDF copy of the Diversity Calculator into your project's folder.</li>
+            <details>
+              <summary><i>&emsp;&emsp;[Click to Display Example <span class="icon">👇</span>]</i></summary>
+              <p>&emsp;&emsp;<img src="img/DiversityCalculator.png"></p>
+            </details>
+            <li data-id="CL_3_23" class="f_misc">Save and close the 'New Engr & Supr Cost' sheet.</li>
+
+            <h4><u><br>Final Report Generation</u></h4>
+            <li data-id="CL_3_24" class="f_misc">With your WO open in Maximo, navigate back to the 'Plans' tab.</li>
+            <li data-id="CL_3_25" class="f_misc">Check the 'Kit Materials?' and 'Reserve Minor Materials?' options. In the 'Kit Notes' type in '[COUNTY OF PROJECT] Storeroom.'</li>
+            <details>
+              <summary><i>&emsp;&emsp;[Click to Display Example <span class="icon">👇</span>]</i></summary>
+              <p>&emsp;&emsp;<img src="img/StoreRoom.PNG"></p>
+            </details>
+            <li data-id="CL_3_26" class="f_misc">Navigate to the 'CU Estimate Request' page.</li>
+            <li data-id="CL_3_27" class="f_misc">In the 'Versions' tab, change 'Contribution Method' from 'N' to 'A'. Copy and paste the value in Column J of the 'New Engr' sheet into the 'Amount' field.</li>
+            <li data-id="CL_3_28" class="f_misc">Change 'Apply Contributions'</li>
+            <li data-id="CL_3_29" class="f_misc">Click <b>'Propogate Changes'</b> then press save.</li>
+            <li data-id="CL_3_30" class="f_misc">Exit the 'CU Estimate Request' page by pressing 'return' in the top right corner. Navigate to the 'LOGS' tab.</li>
+            <li data-id="CL_3_31" class="f_misc">Add a 'New Row'. In the 'Description' field, type in 'P&N'.</li>
+            <li data-id="CL_3_32" class="f_misc">In the 'Long Description' field, type in a summary of the costs and context behind the project.</li>
+            <details>
+              <summary><i>&emsp;&emsp;[Click to show Example P&N <span class="icon">👇</span>]</i></summary>
+              <p style="font-family: Georgia, serif;"><br><i>"The purpose of this project is to Provide a Make Ready work estimate for <b>[CLIENT NAME]</b> for a Joint Use project to install communication fiber on <b>[X]</b> Entergy-owned pole(s). The work that is required on this estimate will consist of <b>[...REPLACING X POLES, RAISING X DRIP LOOP, ETC].</b> This work is done in order to obtain the required clearances between the proposed communication cables and Entergy facilities, as well as NESC required clearances over <b>[ROADS/DRIVEWAYS/GROUND]</b> along <b>[LOCATION]</b></i>
+              <br><br><i>The cost of this project is $<b>[CIAC SUBTOTAL]</b> plus a TGU cost of $<b>[((CIAC VOUCHER W/TGU)-(CIAC SUBTOTAL))]</b> and Sales Tax of $<b>[SALES TAX VOUCHER]</b> for a total cost of $<b>[TOTAL OWED]</b> to be paid by <b>[CLIENT NAME]</b> This project is value engineered by <b>[YOUR NAME]</b></i>"</p><br>
+            </details>
+
+            <li data-id="CL_3_33" class="f_misc">Add a 'New Row'. In the 'Description' field, type in 'Work Description'.</li>
+            <li data-id="CL_3_34" class="f_misc">In the 'Long Description' field, type in a basic description of the work being done.</li>
+            <details>
+              <summary><i>&emsp;&emsp;[Click to show Example Work Description <span class="icon">👇</span>]</i></summary>
+              <p style="font-family: Georgia, serif;"><br><i>"<b>[...REPLACING X POLES, RAISING X DRIP LOOP, ETC]</b> to obtain enough space to meet proper clearances between the proposed communication cables and Entergy facilities, as well as meet required NESC clearances over the drivevway.</i>"</p><br>
+            </details>
+
+            <li data-id="CL_3_35" class="f_misc">Navigate back to 'Plans' &rarr; 'CU Estimate Request'. Press the 'Perform Estimation' button once again.</li>
+            <li><b><br>--------<br><i><u>Once estimations are complete, run the following reports and save them to your project's folder:</b></i></u></li>
+            <li data-id="CL_3_36" class="f_misc">CUE Cost Distribution Summary</li>
+            <li data-id="CL_3_37" class="f_misc">CUE Job Cost Summary</li>
+            <li data-id="CL_3_38" class="f_misc">CUE Material Summary</li>
+            <li data-id="CL_3_39" class="f_misc">CUE Station Detail & Job Instruction</li>
+
+            <li><b><br><u>Navigate to the 'Logs' tab. Run following reports and save them to your project's folder:</b></i></u></li>
+            <li data-id="CL_3_40" class="f_misc">Work Order Details</li>
+            <li data-id="CL_3_41" class="f_misc">Job Jacket <i>(Note: Select the second 'Job Jacket' that appears within the search query')</i></li>
+            <li><b>--------</b><br><br></li>
+            <li data-id="CL_3_42" class="f_misc">Update the Job Jacket to display the WO#, Commit Date, OH/UG, Short Description, Local Office, Man Hours, Upstream Device, and KMZ image.</li>
+            <details>
+              <summary><i>&emsp;&emsp;[Click to Display Example <span class="icon">👇</span>]</i></summary>
+              <p>&emsp;&emsp;<img src="img/JobJacket.PNG"></p>
+            </details>
+            
+            <li data-id="CL_3_43" class="f_misc">On the 'Work Order Page', click on the Paper Clip &rarr; 'Add New Attachments' &rarr; 'Add New File.'</li>
+            <li data-id="CL_3_44" class="f_misc">Upload all relevant files to the project. This includes the generated reports, client and Make Right emails, inspection notes, Poleforeman Reports etc.</li>
+            <details>
+              <summary><i>&emsp;&emsp;[Click to Display Example List of Attachments <span class="icon">👇</span>]</i></summary>
+              <p>&emsp;&emsp;<img src="img/Attachments.png"></p>
+            </details>
+            <li data-id="CL_3_45" class="f_misc">Set the 'Approver' to 'CCRISMA.'</li>
+            <li data-id="CL_3_46" class="f_misc">Press the 'Route Workflow' button and set the job to WAPPR.</li>
+            <li data-id="CL_3_47" class="f_misc">Send an email to Katie (<a href="CCRISMA@Entergy.com">CCRISMA@Entergy.com</a>) to let them know that you have sent the project for approvals. Be sure to follow up with them regularly if there is no change in its status.</li>
+            <li data-id="CL_3_48" class="f_misc">Update the planner and add a comment stating the job is now in WAPPR.</li>
+            <p>Congrats! Your project is now complete!</p>
+            
+            <!-- <li data-id="CL_3_50" class="f_misc">END</li> -->
+            
+          </ul>
+          </ul>
+
+        </div>
+        <!-- END  -->
+      </div>
+
+
+      <div class="tab-pane" id="tabFAQ">      
+        <h2>FAQ</h2>
+        <p>If you believe there are changes that must be made, or if you have any suggestions/contributions you would like to make, please reach out at <a href="amackenzie@msengr.com">amackenzie@msengr.com</a> </p>
+
+      <div class="tab-pane" id="tabOptions">
+        <h2>Options</h2>
+
+        <!-- Theme Selection -->
+        <div class="row">
+          <div class="col col-xs-12 col-sm-4 col-md-6"><h4>Theme selection:</h4></div>
+          <div class="col col-xs-12 col-sm-8 col-md-6"><select class="form-control" id="themes"><!-- Gets filled by jQuery. --></select></div>
+        </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+    </div>
+    <!-- tab-content -->
+  </div>
+  <!-- container -->
+
+  <div class="hiddenfile">
+    <input name="upload" type="file" id="fileInput" />
+  </div>
+
+  <a class="btn btn-default btn-sm fadingbutton back-to-top">Back to Top&thinsp;<span class="glyphicon glyphicon-arrow-up"></span></a>
+
+
+ <script>
+        function show() {
+ 
+            /* Access image by id and change
+            the display property to block*/
+            document.getElementById('image')
+                    .style.display = "block";
+ 
+            document.getElementById('btnID')
+                    .style.display = "none";
+        }
+    </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/andris9/jStorage/v0.4.12/jstorage.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jets/0.8.0/jets.min.js"></script>
+  <script src="js/jquery.highlight.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-66576837-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
